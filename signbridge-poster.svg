@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">SignBridge demo placeholder</title><desc id="desc">A typographic placeholder for the final fingerspelling demonstration.</desc>
+<rect width="1600" height="900" fill="#0A2463"/><rect x="48" y="48" width="1504" height="804" fill="none" stroke="#B7C4E6"/>
+<text x="112" y="152" fill="#B7C4E6" font-family="monospace" font-size="24" letter-spacing="4">SIGNBRIDGE / DEMO</text>
+<text x="800" y="460" text-anchor="middle" fill="#FAFBFF" font-family="Georgia,serif" font-size="112">Every letter connects.</text>
+<text x="800" y="544" text-anchor="middle" fill="#B7C4E6" font-family="Arial,sans-serif" font-size="32">Fingerspelling. Text. Speech.</text>
+<text x="112" y="784" fill="#B7C4E6" font-family="monospace" font-size="22" letter-spacing="2">VIDEO PLACEHOLDER — FINAL RECORDING TO FOLLOW</text>
+</svg>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignBridge — Fingerspelling to text and speech</title>
+  <meta name="description" content="SignBridge turns ASL fingerspelling into text and speech, entirely on-device. An assistive step built by Dayo at Hack Western 2026.">
+  <meta name="theme-color" content="#0A2463">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SignBridge — Fingerspelling to text and speech">
+  <meta property="og:description" content="Fingerspelling in. Text and speech out. No cloud. Built by Dayo at Hack Western 2026.">
+  <meta property="og:site_name" content="SignBridge">
+  <!-- Add og:url and an absolute og:image URL after deployment. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="dark" id="top"><div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="SignBridge home"><span class="brand-symbol" aria-hidden="true">sb.</span> SignBridge</a>
+    <nav aria-label="Main navigation"><a href="#how">How it works <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main" tabindex="-1">
+    <section class="hero dark" aria-labelledby="hero-title"><div class="shell">
+      <p class="label hero-label">Hack Western 2026</p>
+      <h1 id="hero-title">Sign<em>Bridge</em></h1>
+      <div class="hero-bottom">
+        <p class="hero-description">Fingerspelling in.<br>Text and speech out.<br><span>No cloud.</span></p>
+        <div class="hero-action"><a class="button" href="#demo">Watch the demo <span aria-hidden="true">↗</span></a><p class="label">A real-time ASL fingerspelling translator</p></div>
+      </div>
+      <div class="hero-foot label"><span>Built by Dayo</span><span>On-device. By design.</span></div>
+    </div></section>
+    <section class="light section" aria-labelledby="problem-title"><div class="shell split">
+      <div><p class="label section-label">01 / The gap</p><h2 id="problem-title">Not everyone can read sign language.</h2></div>
+      <div class="problem-copy"><ul class="statements" role="list"><li>Interpreters are not always there when a conversation needs one.</li><li>Many translators upload video of you to a server somewhere.</li></ul><p class="muted note">SignBridge is an assistive step toward connection, not a replacement for interpreters.</p></div>
+    </div></section>
+    <section class="dark section" id="demo" aria-labelledby="demo-title"><div class="shell">
+      <div class="section-heading"><div><p class="label section-label">02 / The demo</p><h2 id="demo-title">See it work.</h2></div><p class="muted">One hand. One webcam.<br>One letter at a time.</p></div>
+      <figure class="demo-frame">
+        <!-- Replace demo.mp4 with the final recording; this poster is a placeholder. -->
+        <video controls playsinline preload="none" poster="assets/signbridge-poster.svg" aria-label="SignBridge fingerspelling demonstration" aria-describedby="demo-caption">
+          <source src="assets/demo.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/demo.mp4">Download the demo video</a>.
+        </video>
+        <figcaption id="demo-caption"><span class="label">Fingerspelling → text → speech</span><span>Demo recording slot · replace with your final video.</span></figcaption>
+      </figure>
+    </div></section>
+    <section class="light section" id="how" aria-labelledby="how-title"><div class="shell">
+      <p class="label section-label">03 / The process</p><h2 id="how-title">Camera to speech<br>in four steps.</h2>
+      <ol class="steps" role="list">
+        <li><span class="step-number label">01</span><h3>Camera</h3><p>Webcam frames, captured with OpenCV.</p></li>
+        <li><span class="step-number label">02</span><h3>Hand tracking</h3><p>MediaPipe finds 21 landmarks on the hand.</p></li>
+        <li class="highlight"><span class="step-number label">03</span><h3>Classifier</h3><p>A small neural network recognizes 24 static letters.</p></li>
+        <li><span class="step-number label">04</span><h3>Output</h3><p>Smoothing builds letters into words, shown and spoken aloud.</p></li>
+      </ol>
+    </div></section>
+    <section class="dark section privacy" aria-labelledby="privacy-title"><div class="shell split">
+      <div><p class="label section-label">04 / Local by design</p><h2 id="privacy-title">Runs on the device,<br>not in the <em>cloud.</em></h2></div>
+      <ul class="statements" role="list"><li>Video never leaves the room.</li><li>No internet connection needed.</li></ul>
+    </div></section>
+    <section class="light section" aria-labelledby="next-title"><div class="shell">
+      <p class="label section-label">05 / What's next</p><h2 id="next-title">From letters<br>to <em>conversation.</em></h2>
+      <ul class="roadmap" role="list">
+        <li><span class="label">01</span><div><h3>Full alphabet</h3><p>Add J and Z, which need motion.</p></div><span aria-hidden="true">↗</span></li>
+        <li><span class="label">02</span><div><h3>Words and phrases</h3></div><span aria-hidden="true">↗</span></li>
+        <li><span class="label">03</span><div><h3>Two-way translation</h3><p>Speech to text.</p></div><span aria-hidden="true">↗</span></li>
+        <li><span class="label">04</span><div><h3>More sign languages</h3></div><span aria-hidden="true">↗</span></li>
+      </ul>
+    </div></section>
+  </main>
+  <footer class="dark"><div class="shell footer-inner"><p>SignBridge · Dayo · Hack Western 2026</p><nav aria-label="Project links">
+    <!-- Replace both placeholder hrefs before publishing. -->
+    <a href="#github-repo-link">GitHub repo <span aria-hidden="true">↗</span></a><a href="#demo-video-link">Demo video <span aria-hidden="true">↗</span></a>
+  </nav></div></footer>
+</body>
+</html>

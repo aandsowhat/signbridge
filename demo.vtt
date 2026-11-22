@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+The QNX interface shows the webcam, current sign and transcript.
+
+00:00:03.000 --> 00:00:06.000
+Recorded hand landmarks are replayed. The classifier recognizes C and adds it after a one-second hold.
+
+00:00:06.000 --> 00:00:09.000
+The classifier recognizes A. The transcript reads CA.
+
+00:00:09.000 --> 00:00:12.000
+The classifier recognizes T and adds it to the transcript.
+
+00:00:12.000 --> 00:00:14.000
+Three recognized letters form CAT.
