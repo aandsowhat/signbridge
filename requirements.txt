@@ -1,0 +1,9 @@
+opencv-python>=4.8,<4.12
+opencv-contrib-python>=4.8,<4.12
+mediapipe==0.10.21
+scikit-learn
+numpy<2
+pandas
+pyttsx3
+skl2onnx
+onnxruntime
